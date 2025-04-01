@@ -1,0 +1,14 @@
+/* ---- Hero Section ---- */
+#hero-section{
+    background-color: rgb(238, 238, 228);
+}
+
+#hero-section h1{
+    font-size: 125px;
+    line-height: 0.9;
+    letter-spacing: -0.07em;
+}
+
+#hero-display {
+    min-height: 90vh;
+}
