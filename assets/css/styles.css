@@ -40,11 +40,12 @@
     background-color: var(--bg-main);
 }
 
-#benefit-a{
+#benefits-section h2{
+    font-size: 4rem;
+}
+
+.benefit{
     padding-top: 9rem;
     padding-bottom: 9rem;
 }
 
-#benefit-a h2{
-    font-size: 4rem;
-}
