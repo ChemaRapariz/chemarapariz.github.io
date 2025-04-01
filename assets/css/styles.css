@@ -5,8 +5,12 @@
 
 #hero-section h1{
     font-size: 125px;
-    line-height: 0.9;
-    letter-spacing: -0.07em;
+    line-height: 1.0;
+    letter-spacing: -0.05em;
+}
+
+#hero-section h2{
+    font-size: 2rem;
 }
 
 #hero-display {
