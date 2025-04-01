@@ -1,6 +1,10 @@
+:root {
+    --bg-main: rgb(238, 238, 228);
+    --bg-secondary: rgb(30, 47, 42);
+}
 /* ---- Hero Section ---- */
 #hero-section {
-    background-color: rgb(238, 238, 228);
+    background-color: var(--bg-main);
 }
 
 #hero-section h1 {
@@ -20,7 +24,7 @@
 
 /* ---- Solution Section ---- */
 #solution-section {
-    background-color: rgb(30, 47, 42);
+    background-color: var(--bg-secondary);
     padding-top: 10rem;
     padding-bottom: 10rem;
 }
@@ -29,4 +33,18 @@
     font-size: 2.8rem;
     line-height: 1.2;
     letter-spacing: 0.1rem;
+}
+
+/* ---- Benefits Section ---- */
+#benefits-section {
+    background-color: var(--bg-main);
+}
+
+#benefit-a{
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+}
+
+#benefit-a h2{
+    font-size: 4rem;
 }
