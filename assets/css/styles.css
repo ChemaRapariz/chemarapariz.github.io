@@ -71,3 +71,15 @@ nav {
     bottom: -10%; 
     left: 0%;  
 }
+
+/* ---- Speed Section ---- */
+#speed-section {
+    padding-top: 11rem;
+    padding-bottom: 11rem;
+    background-color: var(--bg-main);
+}
+
+#speed-section h4{
+    font-size: 4rem;
+    margin-top: 3rem;
+}
