@@ -83,3 +83,18 @@ nav {
     font-size: 4rem;
     margin-top: 3rem;
 }
+
+/* ---- FAQ's Section ---- */
+#faq-section{
+    background-color: var(--brand-main);
+    padding-top: 11rem;
+    padding-bottom: 11rem; 
+}
+
+#faq-section h5 {
+    font-size: 4rem;
+}
+
+#faq-section p{
+    color: #e2e2e2;
+}
