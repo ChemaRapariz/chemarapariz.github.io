@@ -54,3 +54,20 @@ nav {
     padding-bottom: 9rem;
 }
 
+/* ---- Work Section ---- */
+#work-section{
+    background-color: var(--brand-main);
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+#work-section h3{
+   font-size: 4rem; 
+}
+
+.mobile-overlay {
+    position: absolute;
+    width: 15%;  
+    bottom: -10%; 
+    left: 0%;  
+}
