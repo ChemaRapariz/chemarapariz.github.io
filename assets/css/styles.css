@@ -1,6 +1,10 @@
 :root {
     --bg-main: rgb(238, 238, 228);
-    --bg-secondary: rgb(30, 47, 42);
+    --brand-main: rgb(30, 47, 42);
+}
+/* ---- Nav ---- */
+nav {
+    background-color: var(--bg-main);
 }
 /* ---- Hero Section ---- */
 #hero-section {
@@ -12,6 +16,7 @@
     line-height: 1.0;
     letter-spacing: -0.05em;
     font-weight: 500;
+    color: var(--brand-main);
 }
 
 #hero-section p {
@@ -24,7 +29,7 @@
 
 /* ---- Solution Section ---- */
 #solution-section {
-    background-color: var(--bg-secondary);
+    background-color: var(--brand-main);
     padding-top: 10rem;
     padding-bottom: 10rem;
 }
