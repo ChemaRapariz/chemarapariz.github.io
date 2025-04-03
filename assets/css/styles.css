@@ -2,10 +2,12 @@
     --bg-main: rgb(238, 238, 228);
     --brand-main: rgb(30, 47, 42);
 }
+
 /* ---- Nav ---- */
 nav {
     background-color: var(--bg-main);
 }
+
 /* ---- Hero Section ---- */
 #hero-section {
     background-color: var(--bg-main);
@@ -34,7 +36,7 @@ nav {
     padding-bottom: 10rem;
 }
 
-#solution-section h2{
+#solution-section h2 {
     font-size: 2.8rem;
     line-height: 1.2;
     letter-spacing: 0.1rem;
@@ -45,31 +47,31 @@ nav {
     background-color: var(--bg-main);
 }
 
-#benefits-section h2{
+#benefits-section h2 {
     font-size: 4rem;
 }
 
-.benefit{
+.benefit {
     padding-top: 9rem;
     padding-bottom: 9rem;
 }
 
 /* ---- Work Section ---- */
-#work-section{
+#work-section {
     background-color: var(--brand-main);
     padding-top: 10rem;
     padding-bottom: 10rem;
 }
 
-#work-section h3{
-   font-size: 4rem; 
+#work-section h3 {
+    font-size: 4rem;
 }
 
 .mobile-overlay {
     position: absolute;
-    width: 15%;  
-    bottom: -10%; 
-    left: 0%;  
+    width: 15%;
+    bottom: -10%;
+    left: 0%;
 }
 
 /* ---- Speed Section ---- */
@@ -79,22 +81,23 @@ nav {
     background-color: var(--bg-main);
 }
 
-#speed-section h4{
+#speed-section h4 {
     font-size: 4rem;
     margin-top: 3rem;
 }
 
 /* ---- FAQ's Section ---- */
-#faq-section{
+#faq-section {
     background-color: var(--brand-main);
     padding-top: 11rem;
-    padding-bottom: 11rem; 
+    padding-bottom: 11rem;
 }
 
 #faq-section h5 {
     font-size: 4rem;
 }
 
-#faq-section p{
+#faq-section p {
     color: #e2e2e2;
 }
+
