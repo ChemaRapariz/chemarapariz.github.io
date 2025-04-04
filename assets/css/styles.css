@@ -1,6 +1,7 @@
 :root {
     --bg-main: rgb(238, 238, 228);
     --brand-main: rgb(30, 47, 42);
+    --heading-fs: 4rem;
 }
 
 /* ---- Nav ---- */
@@ -48,7 +49,7 @@ nav {
 }
 
 #benefits-section h2 {
-    font-size: 4rem;
+    font-size: var(--heading-fs);
 }
 
 .benefit {
@@ -64,7 +65,7 @@ nav {
 }
 
 #work-section h3 {
-    font-size: 4rem;
+    font-size: var(--heading-fs);
 }
 
 .mobile-overlay {
@@ -82,7 +83,7 @@ nav {
 }
 
 #speed-section h4 {
-    font-size: 4rem;
+    font-size: var(--heading-fs);
     margin-top: 3rem;
 }
 
@@ -94,10 +95,19 @@ nav {
 }
 
 #faq-section h5 {
-    font-size: 4rem;
+    font-size: var(--heading-fs);
 }
 
 #faq-section p {
     color: #e2e2e2;
 }
 
+/* ---- CTA Section ---- */
+#cta-section{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    background-color: var(--bg-main);
+}
+#cta-section h2{
+    font-size: var(--heading-fs);
+}

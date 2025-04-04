@@ -1,11 +1,10 @@
-function showFAQ(category, element) {
-    // Hide all FAQ groups
-    document.querySelectorAll('.faq-group').forEach(group => group.classList.add('d-none'));
+function showFAQ(group, button){
 
-    // Show selected FAQ group
-    document.getElementById(`faq-${category}`).classList.remove('d-none');
+    // Hide and show faq sections
+    document.querySelectorAll('.faq-group').forEach(el => el.classList.add('d-none'));
+    document.getElementById(`faq-${group}`).classList.toggle('d-none');
 
-    // Update active tab styling
-    document.querySelectorAll('.faq-tab-btn').forEach(btn => btn.classList.remove('fw-bold'));
-    element.classList.add('fw-bold');
+    // Styles of active button
+    document.querySelectorAll('.faq-tab-btn').forEach(btn => btn.classList.remove('fw-bold'))
+    button.classList.add('fw-bold');
 }
