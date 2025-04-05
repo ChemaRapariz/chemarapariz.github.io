@@ -371,8 +371,8 @@
                             <h2 class="fs-2 text-center py-5">What is your desired time-frame?</h2>
                         </div>
                         <div class="col-12 col-md-8 fs-3">
-                            <input onchange="rangeDisplay('time', this)" type="range" class="form-range" min="0" max="12"
-                                value="0">
+                            <input onchange="rangeDisplay('time', this)" type="range" class="form-range" min="0"
+                                max="12" value="0">
                             <span class="d-block mt-3" id="timeRangeValue">0 Week(s)</span>
                         </div>
                         <div class="mt-5 col-10 form-check form-pill shadow py-2 rounded-pill fs-5">
@@ -389,8 +389,8 @@
                             </h2>
                         </div>
                         <div class="col-12 col-md-8 fs-3">
-                            <input onchange="rangeDisplay('budget', this)" type="range" class="form-range" step="50" min="500" max="3000"
-                                value="0">
+                            <input onchange="rangeDisplay('budget', this)" type="range" class="form-range" step="50"
+                                min="500" max="3000" value="0">
                             <span class="d-block mt-3" id="budgetRangeValue">500€</span>
                         </div>
                         <div class="mt-5 col-10 form-check form-pill shadow py-2 rounded-pill fs-5">
@@ -400,14 +400,27 @@
                             </label>
                         </div>
                     </div>
+
                     <div class="row justify-content-center form-page d-none" id="form-page-4">
                         <div class="col-12">
                             <h2 class="fs-2 text-center py-5">What is your desired time-frame?</h2>
                         </div>
-                        <div class="col-12 col-md-8 fs-3">
-                            4
+                        <div class="col-8 mb-3">
+                            <label for="companyName" class="form-label fs-5">Name of company or project</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="companyName">
+                            </div>
+
+                            <label for="companyWebsite" class="form-label fs-5 mt-4">Website URL</label>
+                            <div class="form-text d-inline" id="optional-addon">(optional)
+                            </div>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="companyWebsite"
+                                    aria-describedby="optional-addon">
+                            </div>
                         </div>
                     </div>
+
                     <div class="row justify-content-center form-page d-none" id="form-page-5">
                         <div class="col-12">
                             <h2 class="fs-2 text-center py-5">What is your desired time-frame?</h2>
