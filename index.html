@@ -371,10 +371,11 @@
                             <h2 class="fs-2 text-center py-5">What is your desired time-frame?</h2>
                         </div>
                         <div class="col-12 col-md-8 fs-3">
-                            <input onchange="displayValue(this)" type="range" class="form-range" min="0" max="12" value="0">
-                            <span class="d-block mt-3" id="rangeValue">0 Week(s)</span>
+                            <input onchange="rangeDisplay('time', this)" type="range" class="form-range" min="0" max="12"
+                                value="0">
+                            <span class="d-block mt-3" id="timeRangeValue">0 Week(s)</span>
                         </div>
-                        <div class="mt-5 col-10 form-check form-pill shadow py-1 rounded-pill fs-5">
+                        <div class="mt-5 col-10 form-check form-pill shadow py-2 rounded-pill fs-5">
                             <input class="form-check-input" type="checkbox" value="" id="longTerm">
                             <label class="form-check-label" for="longTerm">
                                 I am looking for a long-term partnership
@@ -384,10 +385,19 @@
 
                     <div class="row justify-content-center form-page d-none" id="form-page-3">
                         <div class="col-12">
-                            <h2 class="fs-2 text-center py-5">What is your desired time-frame?</h2>
+                            <h2 class="fs-2 text-center py-5">What is your approximate budget?
+                            </h2>
                         </div>
                         <div class="col-12 col-md-8 fs-3">
-                            3
+                            <input onchange="rangeDisplay('budget', this)" type="range" class="form-range" step="50" min="500" max="3000"
+                                value="0">
+                            <span class="d-block mt-3" id="budgetRangeValue">500€</span>
+                        </div>
+                        <div class="mt-5 col-10 form-check form-pill shadow py-2 rounded-pill fs-5">
+                            <input class="form-check-input" type="checkbox" value="" id="stock">
+                            <label class="form-check-label" for="stock">
+                                I'm interested in discussing stock compensation
+                            </label>
                         </div>
                     </div>
                     <div class="row justify-content-center form-page d-none" id="form-page-4">

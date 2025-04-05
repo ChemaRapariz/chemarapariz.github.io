@@ -33,6 +33,7 @@ function prevPage(btn) {
     }
 }
 
-function displayValue(rangeForm){
-    document.querySelector('#rangeValue').innerHTML = `${rangeForm.value} Week(s)`;
+function rangeDisplay(category, rangeForm){
+    console.log(document.querySelector(`#${category}RangeValue`).innerHTML);
+    document.querySelector(`#${category}RangeValue`).innerHTML = `${rangeForm.value} ${category === 'time' ? 'Week(s)' : '€'}`;
 }
