@@ -11,29 +11,32 @@ function showFAQ(group, button) {
 
 let currPage = 1;
 
-function nextPage() {
-    currPage++;
-    if(currPage >= 2){
-        document.querySelector('.btn-outline-secondary').classList.remove('d-none');
+function toggleFormPage(btn) {
+    const isNext = btn.classList.contains('btn-success');
+    const totalPages = document.querySelectorAll('.form-page').length;
+
+    if (isNext && currPage < totalPages) {
+        currPage++;
+    } else if(!isNext && currPage > 1){
+        currPage--;
     }
-    document.querySelectorAll('.form-page').forEach(fp => fp.classList.add('d-none'));
-    document.querySelector(`#form-page-${currPage}`).classList.remove('d-none');
+
+    document.querySelectorAll('.form-page').forEach(page => page.classList.add('d-none'));
+    const currentPage = document.querySelector(`#form-page-${currPage}`);
+    console.log(currentPage);
+    if(currentPage) currentPage.classList.remove('d-none');
+
+    const backBtn = document.querySelector('.btn-outline-secondary');
+    if (backBtn) {
+        backBtn.classList.toggle('d-none', currPage === 1);
+    }
 }
 
-function prevPage(btn) {
-    currPage--;
-    if(currPage < 1){
-        btn.classList.add('d-none');
-        return;
-    } 
-    document.querySelectorAll('.form-page').forEach(fp => fp.classList.add('d-none'));
-    document.querySelector(`#form-page-${currPage}`).classList.remove('d-none');
-    if(currPage === 1){
-        btn.classList.add('d-none');
-    }
-}
 
-function rangeDisplay(category, rangeForm){
-    console.log(document.querySelector(`#${category}RangeValue`).innerHTML);
-    document.querySelector(`#${category}RangeValue`).innerHTML = `${rangeForm.value} ${category === 'time' ? 'Week(s)' : '€'}`;
+function rangeDisplay(category, rangeForm) {
+    const valueDisplay = document.querySelector(`#${category}RangeValue`);
+    if(!valueDisplay) return;
+
+    const suffix = category === 'time' ? 'Week(s)' : '€';
+    valueDisplay.textContent = `${rangeForm.value} ${suffix}`;
 }

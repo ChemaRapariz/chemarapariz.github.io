@@ -371,7 +371,7 @@
                             <h2 class="fs-2 text-center py-5">What is your desired time-frame?</h2>
                         </div>
                         <div class="col-12 col-md-8 fs-3">
-                            <input onchange="rangeDisplay('time', this)" type="range" class="form-range" min="0"
+                            <input oninput="rangeDisplay('time', this)" type="range" class="form-range" min="0"
                                 max="12" value="0">
                             <span class="d-block mt-3" id="timeRangeValue">0 Week(s)</span>
                         </div>
@@ -389,7 +389,7 @@
                             </h2>
                         </div>
                         <div class="col-12 col-md-8 fs-3">
-                            <input onchange="rangeDisplay('budget', this)" type="range" class="form-range" step="50"
+                            <input oninput="rangeDisplay('budget', this)" type="range" class="form-range" step="50"
                                 min="500" max="3000" value="0">
                             <span class="d-block mt-3" id="budgetRangeValue">500€</span>
                         </div>
@@ -457,12 +457,12 @@
                     </div>
 
                     <div class="col-12 text-center position-absolute bottom-0 mb-5">
-                        <button onclick="nextPage()" class="btn btn-lg btn-success shadow rounded-pill px-5 py-1">
+                        <button onclick="toggleFormPage(this)" class="btn btn-lg btn-success shadow rounded-pill px-5 py-1">
                             Next
                         </button>
                     </div>
                     <div class="col-3 position-absolute bottom-0 start-0 mb-4">
-                        <button onclick="prevPage(this)"
+                        <button onclick="toggleFormPage(this)"
                             class="btn btn-lg btn-outline-secondary rounded-pill px-4 py-1 ms-4 d-none">
                             Back
                         </button>
