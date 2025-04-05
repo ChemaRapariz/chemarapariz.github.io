@@ -32,3 +32,7 @@ function prevPage(btn) {
         btn.classList.add('d-none');
     }
 }
+
+function displayValue(rangeForm){
+    document.querySelector('#rangeValue').innerHTML = `${rangeForm.value} Week(s)`;
+}

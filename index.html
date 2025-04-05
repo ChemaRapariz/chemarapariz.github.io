@@ -340,7 +340,7 @@
         <section id="form-section" class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-12 rounded-4 shadow position-relative" id="form-card">
-                    <div class="row justify-content-center form-page d-none" id="form-page-1">
+                    <div class="row justify-content-center form-page" id="form-page-1">
                         <div class="col-12">
                             <h2 class="fs-2 text-center py-5">Which services do you require?</h2>
                         </div>
@@ -366,12 +366,19 @@
                         </div>
                     </div>
 
-                    <div class="row justify-content-center form-page" id="form-page-2">
+                    <div class="row justify-content-center form-page d-none" id="form-page-2">
                         <div class="col-12">
                             <h2 class="fs-2 text-center py-5">What is your desired time-frame?</h2>
                         </div>
                         <div class="col-12 col-md-8 fs-3">
-                            <input onchange="displayValue()" type="range" class="form-range" min="0" max="5">
+                            <input onchange="displayValue(this)" type="range" class="form-range" min="0" max="12" value="0">
+                            <span class="d-block mt-3" id="rangeValue">0 Week(s)</span>
+                        </div>
+                        <div class="mt-5 col-10 form-check form-pill shadow py-1 rounded-pill fs-5">
+                            <input class="form-check-input" type="checkbox" value="" id="longTerm">
+                            <label class="form-check-label" for="longTerm">
+                                I am looking for a long-term partnership
+                            </label>
                         </div>
                     </div>
 
