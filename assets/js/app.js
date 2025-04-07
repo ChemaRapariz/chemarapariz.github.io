@@ -52,8 +52,18 @@ form.addEventListener('submit', e => {
 
 function submitConfirmation() {
     const confirmSpan = document.querySelector('#submitConfirmation');
+
     confirmSpan.classList.remove('d-none');
-    setTimeout(() => confirmSpan.classList.add('d-none'), 2500);
+    setTimeout(() => {
+        confirmSpan.classList.add('show');
+    }, 10);
+
+    setTimeout(() => {
+        confirmSpan.classList.remove('show');
+        setTimeout(() => {
+            confirmSpan.classList.add('d-none');
+        }, 500);
+    }, 3000);
 }
 
 function rangeDisplay(category, rangeForm) {

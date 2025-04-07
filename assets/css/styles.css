@@ -127,3 +127,14 @@ nav {
     background-color: var(--bg-main);
     padding: 1rem 4rem;
 }
+
+#submitConfirmation{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#submitConfirmation.show{
+    opacity: 1;
+    visibility: visible;
+}
