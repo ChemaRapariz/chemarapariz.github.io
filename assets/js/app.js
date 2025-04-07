@@ -44,15 +44,21 @@ form.addEventListener('submit', e => {
     e.preventDefault();
     const formData = new FormData(form); // Capture form data
     form.reset(); // Reset the form immediately
-
+    submitConfirmation();
     fetch(scriptURL, { method: 'POST', body: formData })
         .then(response => console.log('Success!', response))
         .catch(error => console.error('Error!', error.message));
 });
 
+function submitConfirmation() {
+    const confirmSpan = document.querySelector('#submitConfirmation');
+    confirmSpan.classList.remove('d-none');
+    setTimeout(() => confirmSpan.classList.add('d-none'), 2500);
+}
+
 function rangeDisplay(category, rangeForm) {
     const valueDisplay = document.querySelector(`#${category}RangeValue`);
-    if(!valueDisplay) return;
+    if (!valueDisplay) return;
 
     const suffix = category === 'time' ? 'Week(s)' : '€';
     valueDisplay.textContent = `${rangeForm.value} ${suffix}`;

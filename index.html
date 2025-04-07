@@ -339,7 +339,8 @@
 
         <section id="form-section" class="container-fluid">
             <div class="row justify-content-center">
-                <form name="submit-to-google-sheet" class="col-12 col-md-10 col-lg-8 rounded-4 shadow position-relative" id="form-card">
+                <form name="submit-to-google-sheet" class="col-12 col-md-10 col-lg-8 rounded-4 shadow position-relative"
+                    id="form-card">
                     <!-- Page 1 -->
                     <div class="row justify-content-center form-page" id="form-page-1">
                         <div class="col-12">
@@ -347,12 +348,15 @@
                         </div>
                         <div class="col-12 col-md-8">
                             <div class="form-check mb-4 form-pill shadow py-2 rounded-pill fs-3">
-                                <input name="websiteDevelopment" class="form-check-input form-input" type="checkbox" id="websiteDevelopment">
+                                <input name="websiteDevelopment" class="form-check-input form-input" type="checkbox"
+                                    id="websiteDevelopment">
                                 <label class="form-check-label" for="websiteDevelopment">Website Development</label>
                             </div>
                             <div class="form-check mb-4 form-pill shadow py-2 rounded-pill fs-3">
-                                <input name="copywritingStorytelling" class="form-check-input form-input" type="checkbox" id="copywritingStorytelling">
-                                <label class="form-check-label" for="copywritingStorytelling">Copywriting & Storytelling</label>
+                                <input name="copywritingStorytelling" class="form-check-input form-input"
+                                    type="checkbox" id="copywritingStorytelling">
+                                <label class="form-check-label" for="copywritingStorytelling">Copywriting &
+                                    Storytelling</label>
                             </div>
                             <div class="form-check form-pill shadow py-2 rounded-pill fs-3">
                                 <input name="other" class="form-check-input form-input" type="checkbox" id="other">
@@ -367,12 +371,14 @@
                             <h2 class="fs-2 text-center py-5">What is your desired time-frame?</h2>
                         </div>
                         <div class="col-12 col-md-8 fs-3">
-                            <input name="timeRangeValue" oninput="rangeDisplay('time', this)" type="range" class="form-range form-input" min="1" max="12" value="1">
+                            <input name="timeRangeValue" oninput="rangeDisplay('time', this)" type="range"
+                                class="form-range form-input" min="1" max="12" value="1">
                             <span class="d-block mt-3 text-center" id="timeRangeValue">1 Week(s)</span>
                         </div>
                         <div class="mt-5 col-12 col-md-10 form-check form-pill shadow py-2 rounded-pill">
                             <input name="longTerm" class="form-check-input form-input" type="checkbox" id="longTerm">
-                            <label class="form-check-label" for="longTerm">I am looking for a long-term partnership</label>
+                            <label class="form-check-label" for="longTerm">I am looking for a long-term
+                                partnership</label>
                         </div>
                     </div>
 
@@ -382,12 +388,14 @@
                             <h2 class="fs-2 text-center py-5">What is your approximate budget?</h2>
                         </div>
                         <div class="col-12 col-md-8 fs-3">
-                            <input name="budgetRangeValue" oninput="rangeDisplay('budget', this)" type="range" class="form-range form-input" step="50" min="500" max="3000" value="500">
+                            <input name="budgetRangeValue" oninput="rangeDisplay('budget', this)" type="range"
+                                class="form-range form-input" step="50" min="500" max="3000" value="500">
                             <span class="d-block mt-3 text-center" id="budgetRangeValue">500€</span>
                         </div>
                         <div class="mt-5 col-12 col-md-10 form-check form-pill shadow py-2 rounded-pill">
                             <input name="stock" class="form-check-input form-input" type="checkbox" id="stock">
-                            <label class="form-check-label" for="stock">I'm interested in discussing stock compensation</label>
+                            <label class="form-check-label" for="stock">I'm interested in discussing stock
+                                compensation</label>
                         </div>
                     </div>
 
@@ -400,8 +408,10 @@
                             <label for="companyName" class="form-label fs-5">Name of company or project</label>
                             <input name="companyName" type="text" class="form-control mb-4 form-input" id="companyName">
 
-                            <label for="companyWebsite" class="form-label fs-5">Website URL <span class="form-text">(optional)</span></label>
-                            <input name="companyWebsite" type="text" class="form-control form-input" id="companyWebsite">
+                            <label for="companyWebsite" class="form-label fs-5">Website URL <span
+                                    class="form-text">(optional)</span></label>
+                            <input name="companyWebsite" type="text" class="form-control form-input"
+                                id="companyWebsite">
                         </div>
                     </div>
 
@@ -412,7 +422,9 @@
                         </div>
                         <div class="col-12 col-md-8">
                             <div class="form-floating">
-                                <textarea name="projectDescription" class="form-control" placeholder="Project scope & description" id="projectDescription" style="height: 200px"></textarea>
+                                <textarea name="projectDescription" class="form-control"
+                                    placeholder="Project scope & description" id="projectDescription"
+                                    style="height: 200px"></textarea>
                                 <label for="projectDescription">Project scope & description</label>
                             </div>
                         </div>
@@ -437,11 +449,17 @@
 
                     <!-- Navigation Buttons -->
                     <div class="col-12 text-center position-absolute bottom-0 mb-5">
-                        <button type="button" onclick="toggleFormPage(this)" class="btn btn-lg btn-success shadow rounded-pill px-5 py-1">Next</button>
-                        <button type="submit" class="btn btn-lg btn-outline-success shadow rounded-pill px-5 py-1 d-none">Submit</button>
+                        <button type="button" onclick="toggleFormPage(this)"
+                            class="btn btn-lg btn-success shadow rounded-pill px-5 py-1">Next</button>
+                        <button type="submit"
+                            class="btn btn-lg btn-outline-success shadow rounded-pill px-5 py-1 d-none">Submit</button>
+                    </div>
+                    <div class="col-12 text-center position-absolute bottom-0 pb-2 d-none" id="submitConfirmation">
+                        <span class="text-success">Successfully submitted!</span>
                     </div>
                     <div class="col-3 position-absolute bottom-0 start-0 mb-4">
-                        <button type="button" onclick="toggleFormPage(this)" class="btn btn-lg btn-outline-secondary rounded-pill px-4 py-1 ms-4 d-none">Back</button>
+                        <button type="button" onclick="toggleFormPage(this)"
+                            class="btn btn-lg btn-outline-secondary rounded-pill px-4 py-1 ms-4 d-none">Back</button>
                     </div>
                 </form>
             </div>
