@@ -449,16 +449,16 @@
 
                     <!-- Navigation Buttons -->
                     <div class="col-12 text-center position-absolute bottom-0 mb-5">
-                        <button type="button" onclick="toggleFormPage(this)"
+                        <button id="nextBtn" type="button" onclick="toggleFormPage(this)"
                             class="btn btn-lg btn-success shadow rounded-pill px-5 py-1">Next</button>
-                        <button type="submit"
-                            class="btn btn-lg btn-outline-success shadow rounded-pill px-5 py-1 d-none">Submit</button>
+                        <button id="submitBtn" type="submit"
+                            class="btn btn-lg btn-success shadow rounded-pill px-5 py-1 d-none">Submit</button>
                     </div>
                     <div class="col-12 text-center position-absolute bottom-0 pb-2 d-none" id="submitConfirmation">
                         <span class="text-success">Successfully submitted!</span>
                     </div>
                     <div class="col-3 position-absolute bottom-0 start-0 mb-4">
-                        <button type="button" onclick="toggleFormPage(this)"
+                        <button id="backBtn" type="button" onclick="toggleFormPage(this)"
                             class="btn btn-lg btn-outline-secondary rounded-pill px-4 py-1 ms-4 d-none">Back</button>
                     </div>
                 </form>

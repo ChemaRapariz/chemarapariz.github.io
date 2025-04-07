@@ -13,9 +13,9 @@ let currPage = 1;
 const totalPages = document.querySelectorAll('.form-page').length;
 
 function toggleFormPage(btn) {
-    const submitBtn = document.querySelector('.btn-outline-success.shadow.rounded-pill');
-    const backBtn = document.querySelector('.btn-outline-secondary');
-    const nextBtn = document.querySelector('.btn-success.shadow.rounded-pill');
+    const submitBtn = document.getElementById('submitBtn');
+    const backBtn = document.getElementById('backBtn');
+    const nextBtn = document.getElementById('nextBtn');
     const formPages = document.querySelectorAll('.form-page');
 
     // Determine if the button clicked is "Next" or "Back"
@@ -37,11 +37,16 @@ function toggleFormPage(btn) {
     console.log(`Current Page: ${currPage}`);
 }
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwP702e0DbLPUttKliDR5axjYW60bfp-AlNZhIAUuUaTm8fEed_ucFLwU4LobB9QTeYPw/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzPJGEBBpCbfBNffkyr5TgA6VS3W27A4fPP8xHBvUnDc_G8NMEr34JisdPgcE97YaK3Wg/exec'
 const form = document.forms['submit-to-google-sheet']
 
 form.addEventListener('submit', e => {
     e.preventDefault();
+    if (currPage !== totalPages) {
+        alert('You must complete all pages before submitting the form.');
+        document.getElementById('submitBtn').classList.add('d-none');
+        return;
+    }
     const formData = new FormData(form); // Capture form data
     form.reset(); // Reset the form immediately
     submitConfirmation();
