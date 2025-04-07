@@ -37,13 +37,14 @@ function toggleFormPage(btn) {
     console.log(`Current Page: ${currPage}`);
 }
 
-document.querySelector('form').addEventListener('submit', e => {
-    e.preventDefault();
-    if(currPage === totalPages){
-        console.log('Success');
-    } else {
-        console.log('Error');
-    }
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwP702e0DbLPUttKliDR5axjYW60bfp-AlNZhIAUuUaTm8fEed_ucFLwU4LobB9QTeYPw/exec'
+const form = document.forms['submit-to-google-sheet']
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
 });
 
 function rangeDisplay(category, rangeForm) {
