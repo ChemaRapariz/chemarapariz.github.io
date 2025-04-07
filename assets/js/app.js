@@ -41,10 +41,13 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbwP702e0DbLPUttKliDR5
 const form = document.forms['submit-to-google-sheet']
 
 form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    e.preventDefault();
+    const formData = new FormData(form); // Capture form data
+    form.reset(); // Reset the form immediately
+
+    fetch(scriptURL, { method: 'POST', body: formData })
         .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
+        .catch(error => console.error('Error!', error.message));
 });
 
 function rangeDisplay(category, rangeForm) {
