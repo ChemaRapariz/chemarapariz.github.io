@@ -30,6 +30,22 @@ nav {
     min-height: 90vh;
 }
 
+.highlighted-word {
+    position: relative;
+    display: inline-block;
+}
+
+.highlighted-word::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Adjust the distance between the word and the line */
+    left: 0;
+    width: 100%; /* Make the line span the width of the word */
+    height: 14px; /* Adjust the thickness of the line */
+    background: url(https://solarity.farm/wp-content/themes/seb-jagoe-theme3/underlines/underline3.svg);
+    border-radius: 2px; /* Optional: Add rounded edges to the line */
+}
+
 /* ---- Solution Section ---- */
 #solution-section {
     background-color: var(--brand-main);
