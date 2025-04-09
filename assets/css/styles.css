@@ -115,7 +115,7 @@ nav {
 /* ---- Form Section ---- */
 #form-section {
     background-color: var(--bg-main);
-    padding-bottom: 4rem;
+    padding-bottom: 5rem;
 }
 #form-card{
     background-color: white;
@@ -137,4 +137,11 @@ nav {
 #submitConfirmation.show{
     opacity: 1;
     visibility: visible;
+}
+
+/* ---- Footer ---- */
+footer{
+    background-color: var(--bg-main);
+    padding-top: 2rem;
+    padding-bottom: 6rem;
 }
