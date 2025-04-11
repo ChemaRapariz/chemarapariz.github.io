@@ -38,39 +38,16 @@ nav {
 .highlighted-word::after {
     content: '';
     position: absolute;
-    bottom: -5px; /* Adjust the distance between the word and the line */
+    bottom: -5px;
+    /* Adjust the distance between the word and the line */
     left: 0;
-    width: 100%; /* Make the line span the width of the word */
-    height: 14px; /* Adjust the thickness of the line */
+    width: 100%;
+    /* Make the line span the width of the word */
+    height: 14px;
+    /* Adjust the thickness of the line */
     background: url(https://solarity.farm/wp-content/themes/seb-jagoe-theme3/underlines/underline3.svg);
-    border-radius: 2px; /* Optional: Add rounded edges to the line */
-}
-
-/* ---- Solution Section ---- */
-#solution-section {
-    background-color: var(--brand-main);
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-}
-
-#solution-section h2 {
-    font-size: 2.8rem;
-    line-height: 1.2;
-    letter-spacing: 0.1rem;
-}
-
-/* ---- Benefits Section ---- */
-#benefits-section {
-    background-color: var(--bg-main);
-}
-
-#benefits-section h2 {
-    font-size: var(--heading-fs);
-}
-
-.benefit {
-    padding-top: 9rem;
-    padding-bottom: 9rem;
+    border-radius: 2px;
+    /* Optional: Add rounded edges to the line */
 }
 
 /* ---- Work Section ---- */
@@ -89,6 +66,33 @@ nav {
     width: 15%;
     bottom: -10%;
     left: 0%;
+}
+
+/* ---- Benefits Section ---- */
+#benefits-section {
+    background-color: var(--bg-main);
+}
+
+#benefits-section h2 {
+    font-size: var(--heading-fs);
+}
+
+.benefit {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+}
+
+/* ---- Solution Section ---- */
+#solution-section {
+    background-color: var(--brand-main);
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+#solution-section h2 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    letter-spacing: 0.1rem;
 }
 
 /* ---- Speed Section ---- */
@@ -119,12 +123,13 @@ nav {
 }
 
 /* ---- CTA Section ---- */
-#cta-section{
+#cta-section {
     padding-top: 5rem;
     padding-bottom: 3rem;
     background-color: var(--bg-main);
 }
-#cta-section h2{
+
+#cta-section h2 {
     font-size: var(--heading-fs);
 }
 
@@ -133,30 +138,31 @@ nav {
     background-color: var(--bg-main);
     padding-bottom: 5rem;
 }
-#form-card{
+
+#form-card {
     background-color: white;
     height: 600px;
     max-width: 700px;
 }
 
-.form-pill{
+.form-pill {
     background-color: var(--bg-main);
     padding: 1rem 4rem;
 }
 
-#submitConfirmation{
+#submitConfirmation {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-#submitConfirmation.show{
+#submitConfirmation.show {
     opacity: 1;
     visibility: visible;
 }
 
 /* ---- Footer ---- */
-footer{
+footer {
     background-color: var(--bg-main);
     padding-top: 2rem;
     padding-bottom: 6rem;
