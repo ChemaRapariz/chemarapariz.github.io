@@ -82,14 +82,14 @@ nav {
     padding-bottom: 9rem;
 }
 
-/* ---- Solution Section ---- */
-#solution-section {
+/* ---- Process Section ---- */
+#process-section {
     background-color: var(--brand-main);
     padding-top: 10rem;
     padding-bottom: 10rem;
 }
 
-#solution-section h2 {
+#process-section h2 {
     font-size: 2.8rem;
     line-height: 1.2;
     letter-spacing: 0.1rem;
