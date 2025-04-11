@@ -53,8 +53,8 @@ nav {
 /* ---- Work Section ---- */
 #work-section {
     background-color: var(--brand-main);
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
 }
 
 #work-section h3 {
