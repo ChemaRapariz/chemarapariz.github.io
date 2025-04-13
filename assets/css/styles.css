@@ -85,14 +85,17 @@ nav {
 /* ---- Process Section ---- */
 #process-section {
     background-color: var(--brand-main);
-    padding-top: 10rem;
+    padding-top: 6rem;
     padding-bottom: 10rem;
 }
 
 #process-section h2 {
-    font-size: 2.8rem;
-    line-height: 1.2;
-    letter-spacing: 0.1rem;
+    font-size: var(--heading-fs);
+    margin-bottom: 7rem;
+}
+
+#process-section svg{
+    max-width: 160px;
 }
 
 /* ---- Speed Section ---- */
