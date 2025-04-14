@@ -119,12 +119,12 @@ nav {
 /* ---- FAQ's Section ---- */
 #faq-section {
     background-color: var(--brand-main);
-    padding-top: 11rem;
+    padding-top: 9rem;
     padding-bottom: 11rem;
 }
 
 #faq-section h5 {
-    font-size: var(--heading-fs);
+    font-size: 5rem;
 }
 
 #faq-section p {
