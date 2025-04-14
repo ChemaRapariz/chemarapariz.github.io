@@ -94,9 +94,15 @@ nav {
     margin-bottom: 7rem;
 }
 
-#process-section svg{
+#process-section svg {
     max-width: 160px;
 }
+
+.step-number {
+    letter-spacing: 1px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
 
 /* ---- Speed Section ---- */
 #speed-section {
