@@ -83,7 +83,15 @@ nav {
 }
 
 #benefits-section h2 {
-    font-size: var(--heading-fs);
+    letter-spacing: -0.02em;
+}
+
+#benefits-section h2 {
+    font-size: 2.5rem;
+}
+
+#benefits-section p{
+    font-size: 1rem;
 }
 
 .benefit {
@@ -286,6 +294,12 @@ footer {
     #work-section.work-display {
         margin-bottom: 0;
     }
+
+    /* ---- Benefits ----- */
+    #benefits-section h2 {
+        font-size: 3.5rem;
+    }
+    
 }
 
 /* Screens of 1200px and more */
@@ -307,6 +321,15 @@ footer {
 
     #work-section p {
         font-size: 1.15rem;
+    }
+
+    /* ---- Benefits ----- */
+    #benefits-section h2 {
+        font-size: var(--heading-fs);
+    }
+
+    #benefits-section p{
+        font-size: 1.25rem;
     }
 }
 
@@ -330,4 +353,6 @@ footer {
     #work-section p {
         font-size: 1.25rem;
     }
+
+    /* ---- Benefits ----- */
 }
