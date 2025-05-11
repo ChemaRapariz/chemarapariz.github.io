@@ -1,7 +1,7 @@
 :root {
     --bg-main: rgb(238, 238, 228);
     --brand-main: rgb(30, 47, 42);
-    --heading-fs: 4rem;
+    --heading-fs: 3.8rem;
 }
 /* ---- Nav ---- */
 nav {
@@ -58,8 +58,8 @@ nav {
 /* ---- Work Section ---- */
 #work-section {
     background-color: var(--brand-main);
-    padding-top: 9rem;
-    padding-bottom: 9rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 #work-section h3 {
@@ -229,10 +229,15 @@ footer {
     }
 
     #work-section h3{
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
     #work-section p{
         font-size: 1rem;
+    }
+
+    #work-section {
+        padding-top: 5.5rem;
+        padding-bottom: 5.5rem;
     }
 
 }
@@ -251,10 +256,15 @@ footer {
 
     /* ----- Work ----- */
     #work-section h3{
-        font-size: 2.5rem;
+        font-size: 2.7rem;
     }
     #work-section p {
         font-size: 1.2rem;
+    }
+
+    #work-section {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
     }
 
     /* ----- Benefits ----- */
@@ -291,12 +301,8 @@ footer {
 
     /* ----- Work ----- */
     #work-section {
-        padding-top: 12rem;
-        padding-bottom: 12rem;
-    }
-
-    #work-section h3 {
-        font-size: 2.7rem;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
     }
 
     #work-section p {
@@ -332,12 +338,18 @@ footer {
     }
 
     /* ----- Work ----- */
+
+    #work-section {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+    }
+
     #work-section h3 {
-        font-size: 3.5rem;
+        font-size: 3.1rem;
     }
 
     #work-section p {
-        font-size: 1.15rem;
+        font-size: 1.1rem;
     }
 
     /* ---- Benefits ----- */
