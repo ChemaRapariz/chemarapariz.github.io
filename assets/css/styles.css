@@ -87,16 +87,16 @@ nav {
 }
 
 #benefits-section h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 #benefits-section p{
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .benefit {
-    padding-top: 9rem;
-    padding-bottom: 9rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 /* ---- Process Section ---- */
@@ -257,7 +257,19 @@ footer {
         font-size: 1.2rem;
     }
 
+    /* ----- Benefits ----- */
+    #benefits-section h2 {
+        font-size: 2.5rem;
+    }
+    
+    #benefits-section p{
+        font-size: 1rem;
+    }
 
+    .benefit {
+        padding-top: 4.5rem;
+        padding-bottom: 4.5rem;
+    }
 
 }
 
@@ -299,6 +311,11 @@ footer {
     #benefits-section h2 {
         font-size: 3.5rem;
     }
+
+    .benefit {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
     
 }
 
@@ -331,6 +348,11 @@ footer {
     #benefits-section p{
         font-size: 1.25rem;
     }
+
+    .benefit {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
 }
 
 /* Screens of 1400px and more */
@@ -355,4 +377,8 @@ footer {
     }
 
     /* ---- Benefits ----- */
+    .benefit {
+        padding-top: 9rem;
+        padding-bottom: 9rem;
+    }
 }
