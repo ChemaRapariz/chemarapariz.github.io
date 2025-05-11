@@ -3,7 +3,6 @@
     --brand-main: rgb(30, 47, 42);
     --heading-fs: 4rem;
 }
-
 /* ---- Nav ---- */
 nav {
     background-color: var(--bg-main);
@@ -14,8 +13,12 @@ nav {
     background-color: var(--bg-main);
 }
 
+#hero-display {
+    min-height: 80vh;
+}
+
 #hero-section h1 {
-    font-size: 120px;
+    font-size: 60px;
     line-height: 1.0;
     letter-spacing: -0.05em;
     font-weight: 500;
@@ -23,12 +26,13 @@ nav {
 }
 
 #hero-section p {
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
-#hero-display {
-    min-height: 90vh;
+#hero-section a{
+    font-size: 1rem;
 }
+
 
 .highlighted-word {
     position: relative;
@@ -178,3 +182,78 @@ footer {
 }
 
 /* ----------- MEDIA QUERIES ----------- */
+
+/* Screens of 576px and more */
+@media screen and (min-width: 576px) {
+
+    /* ----- Hero ------ */
+    #hero-section h1{
+        font-size: 80px;
+    }
+
+    #hero-section p {
+        font-size: 1.4rem;
+    }
+
+    #hero-section a{
+        font-size: 1.5rem;
+    }
+
+    #hero-display {
+        min-height: 90vh;
+    }
+}
+
+/* Screens of 768px and more */
+@media screen and (min-width: 768px) {
+
+    /* ----- Hero ------ */
+    #hero-section h1{
+        font-size: 100px;
+    }
+
+    #hero-section p {
+        font-size: 2rem;
+    }
+
+}
+
+/* Screens of 992px and more */
+@media screen and (min-width: 992px) {
+
+    /* ----- Hero ------ */
+    #hero-section h1{
+        font-size: 100px;
+    }
+
+    #hero-section p {
+        font-size: 1.7rem;
+    }
+}
+
+/* Screens of 1200px and more */
+@media screen and (min-width: 1200px) {
+
+    /* ----- Hero ------ */
+    #hero-section h1{
+        font-size: 110px;
+    }
+
+    #hero-section p {
+        font-size: 2rem;
+    }
+
+}
+
+/* Screens of 1400px and more */
+@media screen and (min-width: 1400px) {
+
+    /* ----- Hero ------ */
+    #hero-section h1 {
+        font-size: 120px;
+    }
+
+    #hero-section p {
+        font-size: 2rem;
+    }
+}
