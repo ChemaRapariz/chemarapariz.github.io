@@ -108,7 +108,7 @@ nav {
 
 #process-section h2 {
     font-size: 2.8rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 #process-section svg {
@@ -242,7 +242,7 @@ footer {
 
     /* ---- Process ---- */
     #process-section h2 {
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
     }
 
 }
@@ -372,6 +372,11 @@ footer {
     }
 
     /* ---- Process ----- */
+    #process-section {
+        padding-top: 6rem;
+        padding-bottom: 10rem;
+    }
+
     #process-section svg {
         max-width: 140px;
     }
@@ -409,10 +414,6 @@ footer {
     }
 
     /* ----- Process ----- */
-    #process-section {
-        padding-top: 6rem;
-        padding-bottom: 10rem;
-    }
     
     #process-section h2 {
         font-size: var(--heading-fs);
