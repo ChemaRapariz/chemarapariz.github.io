@@ -102,7 +102,7 @@ nav {
 /* ---- Process Section ---- */
 #process-section {
     background-color: var(--brand-main);
-    padding-top: 5rem;
+    padding-top: 4rem;
     padding-bottom: 2rem;
 }
 
@@ -112,7 +112,7 @@ nav {
 }
 
 #process-section svg {
-    max-width: 160px;
+    max-width: 150px;
 }
 
 .step-number {
@@ -123,25 +123,33 @@ nav {
 
 /* ---- Speed Section ---- */
 #speed-section {
-    padding-top: 8rem;
-    padding-bottom: 10rem;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
     background-color: var(--bg-main);
 }
 
 #speed-section h4 {
-    font-size: var(--heading-fs);
-    margin-top: 3rem;
+    font-size: 2.4rem;
+    margin-top: 0.5rem;
+}
+
+#speed-section p{
+    font-size: 1rem;
+}
+
+#speed-section span{
+    font-size: 0.7rem;
 }
 
 /* ---- FAQ's Section ---- */
 #faq-section {
     background-color: var(--brand-main);
-    padding-top: 9rem;
-    padding-bottom: 11rem;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
 }
 
 #faq-section h5 {
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 #faq-section p {
@@ -245,6 +253,11 @@ footer {
         margin-bottom: 3rem;
     }
 
+    /* ---- Speed ----- */
+    #speed-section span{
+        font-size: 1rem;
+    }
+
 }
 
 /* Screens of 768px and more */
@@ -289,6 +302,16 @@ footer {
     /* ---- Process ---- */
     #process-section h2 {
         font-size: 3rem;
+    }
+
+    /* ---- Speed ----- */
+    #speed-section h4 {
+        font-size: 3rem;
+        margin-top: 0.5rem;
+    }
+    
+    #speed-section p{
+        font-size: 1.2rem;
     }
 
 }
@@ -336,6 +359,16 @@ footer {
     /* ---- Process ---- */
     #process-section h2 {
         font-size: 3.5rem;
+    }
+
+    /* ---- FAQ's ----- */
+    #faq-section {
+        padding-top: 9rem;
+        padding-bottom: 11rem;
+    }
+    
+    #faq-section h5 {
+        font-size: 5rem;
     }
     
 }
@@ -397,6 +430,16 @@ footer {
 
     #process-section p{
         font-size: 0.8rem;
+    }
+
+    /* ---- Speed ---- */
+    #speed-section h4 {
+        font-size: var(--heading-fs);
+        margin-top: 3rem;
+    }
+
+    #speed-section p{
+        font-size: 1.5rem;
     }
 }
 
