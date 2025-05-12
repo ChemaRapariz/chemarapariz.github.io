@@ -164,7 +164,7 @@ nav {
 }
 
 #cta-section h2 {
-    font-size: var(--heading-fs);
+    font-size: 2.5rem;
 }
 
 /* ---- Form Section ---- */
@@ -258,6 +258,11 @@ footer {
         font-size: 1rem;
     }
 
+    /* ---- CTA Section ----- */
+    #cta-section p{
+        font-size: 1.15rem;
+    }
+
 }
 
 /* Screens of 768px and more */
@@ -313,7 +318,6 @@ footer {
     #speed-section p{
         font-size: 1.2rem;
     }
-
 }
 
 /* Screens of 992px and more */
@@ -363,14 +367,18 @@ footer {
 
     /* ---- FAQ's ----- */
     #faq-section {
-        padding-top: 9rem;
-        padding-bottom: 11rem;
+        padding-top: 5.5rem;
+        padding-bottom: 7.5rem;
     }
     
     #faq-section h5 {
         font-size: 5rem;
     }
-    
+
+    /* ---- CTA Section ----- */
+    #cta-section h2 {
+        font-size: 3rem;
+    }
 }
 
 /* Screens of 1200px and more */
@@ -440,6 +448,20 @@ footer {
 
     #speed-section p{
         font-size: 1.5rem;
+    }
+
+    /* ---- CTA Section ---- */
+    #cta-section {
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+    }
+    
+    #cta-section h2 {
+        font-size: var(--heading-fs);
+    }
+
+    #cta-section p{
+        font-size: 1.35rem;
     }
 }
 
