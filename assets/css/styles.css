@@ -286,6 +286,11 @@ footer {
         padding-bottom: 4.5rem;
     }
 
+    /* ---- Process ---- */
+    #process-section h2 {
+        font-size: 3rem;
+    }
+
 }
 
 /* Screens of 992px and more */
@@ -326,6 +331,11 @@ footer {
     .benefit {
         padding-top: 5rem;
         padding-bottom: 5rem;
+    }
+
+    /* ---- Process ---- */
+    #process-section h2 {
+        font-size: 3.5rem;
     }
     
 }
@@ -379,6 +389,10 @@ footer {
 
     #process-section svg {
         max-width: 140px;
+    }
+
+    #process-section h2 {
+        margin-bottom: 5rem;
     }
 
     #process-section p{
