@@ -102,13 +102,13 @@ nav {
 /* ---- Process Section ---- */
 #process-section {
     background-color: var(--brand-main);
-    padding-top: 6rem;
-    padding-bottom: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
 }
 
 #process-section h2 {
-    font-size: var(--heading-fs);
-    margin-bottom: 7rem;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
 }
 
 #process-section svg {
@@ -240,6 +240,11 @@ footer {
         padding-bottom: 5.5rem;
     }
 
+    /* ---- Process ---- */
+    #process-section h2 {
+        margin-bottom: 4rem;
+    }
+
 }
 
 /* Screens of 768px and more */
@@ -365,6 +370,15 @@ footer {
         padding-top: 6rem;
         padding-bottom: 6rem;
     }
+
+    /* ---- Process ----- */
+    #process-section svg {
+        max-width: 140px;
+    }
+
+    #process-section p{
+        font-size: 0.8rem;
+    }
 }
 
 /* Screens of 1400px and more */
@@ -392,5 +406,24 @@ footer {
     .benefit {
         padding-top: 9rem;
         padding-bottom: 9rem;
+    }
+
+    /* ----- Process ----- */
+    #process-section {
+        padding-top: 6rem;
+        padding-bottom: 10rem;
+    }
+    
+    #process-section h2 {
+        font-size: var(--heading-fs);
+        margin-bottom: 7rem;
+    }
+    
+    #process-section svg {
+        max-width: 160px;
+    }
+
+    #process-section p{
+        font-size: 1rem;
     }
 }
