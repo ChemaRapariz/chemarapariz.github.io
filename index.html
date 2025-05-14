@@ -446,7 +446,7 @@
             </div>
         </section>
 
-        <section id="form-section" class="container-fluid">
+        <section id="form-section" class="container-fluid overflow-hidden px-4">
             <div class="row justify-content-center">
                 <form name="submit-to-google-sheet" class="col-12 col-md-10 col-lg-8 rounded-4 shadow position-relative"
                     id="form-card">
@@ -456,18 +456,18 @@
                             <h2 class="fs-2 text-center py-5">Which services do you require?</h2>
                         </div>
                         <div class="col-12 col-md-8">
-                            <div class="form-check mb-4 form-pill shadow py-2 rounded-pill fs-3">
+                            <div class="form-check mb-4 form-pill shadow py-2 rounded-pill">
                                 <input name="websiteDevelopment" class="form-check-input form-input" type="checkbox"
                                     id="websiteDevelopment">
                                 <label class="form-check-label" for="websiteDevelopment">Website Development</label>
                             </div>
-                            <div class="form-check mb-4 form-pill shadow py-2 rounded-pill fs-3">
+                            <div class="form-check mb-4 form-pill shadow py-2 rounded-pill">
                                 <input name="copywritingStorytelling" class="form-check-input form-input"
                                     type="checkbox" id="copywritingStorytelling">
                                 <label class="form-check-label" for="copywritingStorytelling">Copywriting &
                                     Storytelling</label>
                             </div>
-                            <div class="form-check form-pill shadow py-2 rounded-pill fs-3">
+                            <div class="form-check form-pill shadow py-2 rounded-pill">
                                 <input name="other" class="form-check-input form-input" type="checkbox" id="other">
                                 <label class="form-check-label" for="other">Other</label>
                             </div>
@@ -484,7 +484,7 @@
                                 class="form-range form-input" min="1" max="12" value="1">
                             <span class="d-block mt-3 text-center" id="timeRangeValue">1 Week(s)</span>
                         </div>
-                        <div class="mt-5 col-12 col-md-10 form-check form-pill shadow py-2 rounded-pill">
+                        <div class="mt-5 col-11 col-md-10 form-check form-pill shadow py-2 rounded-pill pe-2">
                             <input name="longTerm" class="form-check-input form-input" type="checkbox" id="longTerm">
                             <label class="form-check-label" for="longTerm">I am looking for a long-term
                                 partnership</label>
@@ -501,7 +501,7 @@
                                 class="form-range form-input" step="50" min="500" max="3000" value="500">
                             <span class="d-block mt-3 text-center" id="budgetRangeValue">500€</span>
                         </div>
-                        <div class="mt-5 col-12 col-md-10 form-check form-pill shadow py-2 rounded-pill">
+                        <div class="mt-5 col-11 col-md-10 form-check form-pill shadow py-2 rounded-pill pe-2">
                             <input name="stock" class="form-check-input form-input" type="checkbox" id="stock">
                             <label class="form-check-label" for="stock">I'm interested in discussing stock
                                 compensation</label>
@@ -514,10 +514,10 @@
                             <h2 class="fs-2 text-center py-5">Tell me about your company</h2>
                         </div>
                         <div class="col-12 col-md-8">
-                            <label for="companyName" class="form-label fs-5">Name of company or project</label>
+                            <label for="companyName" class="form-label fs-6">Name of company or project</label>
                             <input name="companyName" type="text" class="form-control mb-4 form-input" id="companyName">
 
-                            <label for="companyWebsite" class="form-label fs-5">Website URL <span
+                            <label for="companyWebsite" class="form-label fs-6">Website URL <span
                                     class="form-text">(optional)</span></label>
                             <input name="companyWebsite" type="text" class="form-control form-input"
                                 id="companyWebsite">
@@ -545,28 +545,28 @@
                             <h2 class="fs-2 text-center py-5">How may I contact you?</h2>
                         </div>
                         <div class="col-12 col-md-8">
-                            <label for="firstName" class="form-label fs-5">First name</label>
+                            <label for="firstName" class="form-label fs-6">First name</label>
                             <input name="firstName" type="text" class="form-control mb-3" id="firstName">
 
-                            <label for="lastName" class="form-label fs-5">Last name</label>
+                            <label for="lastName" class="form-label fs-6">Last name</label>
                             <input name="lastName" type="text" class="form-control mb-3" id="lastName">
 
-                            <label for="email" class="form-label fs-5">Email</label>
+                            <label for="email" class="form-label fs-6">Email</label>
                             <input name="email" type="email" class="form-control" id="email">
                         </div>
                     </div>
 
                     <!-- Navigation Buttons -->
-                    <div class="col-12 text-center position-absolute bottom-0 mb-5">
+                    <div class="col-12 text-center position-absolute bottom-0 start-0 mb-5">
                         <button id="nextBtn" type="button" onclick="toggleFormPage(this)"
                             class="btn btn-lg btn-success shadow rounded-pill px-5 py-1">Next</button>
                         <button id="submitBtn" type="submit"
                             class="btn btn-lg btn-success shadow rounded-pill px-5 py-1 d-none">Submit</button>
                     </div>
-                    <div class="col-12 text-center position-absolute bottom-0 pb-2 d-none" id="submitConfirmation">
+                    <div class="col-12 text-center position-absolute bottom-0 start-0 pb-2 d-none" id="submitConfirmation">
                         <span class="text-success">Successfully submitted!</span>
                     </div>
-                    <div class="col-3 position-absolute bottom-0 start-0 mb-4">
+                    <div class="col-3 position-absolute bottom-0 start-0 mb-2">
                         <button id="backBtn" type="button" onclick="toggleFormPage(this)"
                             class="btn btn-lg btn-outline-secondary rounded-pill px-4 py-1 ms-4 d-none">Back</button>
                     </div>
