@@ -170,7 +170,7 @@ nav {
 /* ---- Form Section ---- */
 #form-section {
     background-color: var(--bg-main);
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
 }
 
 .form-check{
@@ -470,6 +470,11 @@ footer {
 
     #cta-section p{
         font-size: 1.35rem;
+    }
+
+    /* ---- Form ----- */
+    #form-section {
+        padding-bottom: 5rem;
     }
 }
 
