@@ -83,11 +83,8 @@ nav {
 }
 
 #benefits-section h2 {
-    letter-spacing: -0.02em;
-}
-
-#benefits-section h2 {
     font-size: 2rem;
+    letter-spacing: -0.02em;
 }
 
 #benefits-section p{
