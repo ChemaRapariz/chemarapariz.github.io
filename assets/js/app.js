@@ -49,27 +49,11 @@ form.addEventListener('submit', e => {
     }
     const formData = new FormData(form); // Capture form data
     form.reset(); // Reset the form immediately
-    submitConfirmation();
+    console.log('Submitted');
     fetch(scriptURL, { method: 'POST', body: formData })
         .then(response => console.log('Success!', response))
         .catch(error => console.error('Error!', error.message));
 });
-
-function submitConfirmation() {
-    const confirmSpan = document.querySelector('#submitConfirmation');
-
-    confirmSpan.classList.remove('d-none');
-    setTimeout(() => {
-        confirmSpan.classList.add('show');
-    }, 10);
-
-    setTimeout(() => {
-        confirmSpan.classList.remove('show');
-        setTimeout(() => {
-            confirmSpan.classList.add('d-none');
-        }, 500);
-    }, 3000);
-}
 
 function rangeDisplay(category, rangeForm) {
     const valueDisplay = document.querySelector(`#${category}RangeValue`);
