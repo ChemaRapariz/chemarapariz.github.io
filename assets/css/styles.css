@@ -323,11 +323,6 @@ footer {
     #speed-section p{
         font-size: 1.2rem;
     }
-
-    /* ---- Form ----- */
-    #form-card {
-        height: 600px;
-    }
 }
 
 /* Screens of 992px and more */
