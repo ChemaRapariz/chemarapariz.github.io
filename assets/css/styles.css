@@ -196,6 +196,10 @@ footer {
     padding-bottom: 6rem;
 }
 
+/* ---- Submission Page ---- */
+#submissionMessage svg{
+    max-width: 120px;
+}
 /* ----------- MEDIA QUERIES ----------- */
 
 /* Screens of 576px and more */

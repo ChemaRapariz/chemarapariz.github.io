@@ -49,11 +49,22 @@ form.addEventListener('submit', e => {
     }
     const formData = new FormData(form); // Capture form data
     form.reset(); // Reset the form immediately
+    submissionMessage();
     console.log('Submitted');
     fetch(scriptURL, { method: 'POST', body: formData })
         .then(response => console.log('Success!', response))
         .catch(error => console.error('Error!', error.message));
 });
+
+function submissionMessage() {
+    // Remove form content
+    document.querySelector('#form-page-6').classList.add('d-none');
+    document.querySelector('#submitBtn').classList.add('d-none');
+    document.querySelector('#backBtn').classList.add('d-none');
+
+    // Show submission message
+    document.querySelector('#submissionMessage').classList.remove('d-none');
+}
 
 function rangeDisplay(category, rangeForm) {
     const valueDisplay = document.querySelector(`#${category}RangeValue`);
