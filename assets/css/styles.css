@@ -109,7 +109,7 @@ nav {
 }
 
 #process-section svg {
-    max-width: 150px;
+    max-width: 120px;
 }
 
 .step-number {
@@ -515,7 +515,7 @@ footer {
     }
     
     #process-section svg {
-        max-width: 160px;
+        max-width: 150px;
     }
 
     #process-section p{
