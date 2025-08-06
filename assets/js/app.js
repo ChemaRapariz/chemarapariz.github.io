@@ -48,12 +48,16 @@ form.addEventListener('submit', e => {
         return;
     }
     const formData = new FormData(form); // Capture form data
-    form.reset(); // Reset the form immediately
-    submissionMessage();
-    console.log('Submitted');
     fetch(scriptURL, { method: 'POST', body: formData })
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message));
+        .then(response => {
+            console.log('Success!', response);
+            form.reset();
+            submissionMessage();
+        })
+        .catch(error => {
+            console.error('Error!', error.message);
+            alert('Oops! Something went wrong. Please try again.');
+        });
 });
 
 function submissionMessage() {
