@@ -47,12 +47,12 @@ form.addEventListener('submit', e => {
         document.getElementById('submitBtn').classList.add('d-none');
         return;
     }
+    submissionMessage();
     const formData = new FormData(form); // Capture form data
     fetch(scriptURL, { method: 'POST', body: formData })
         .then(response => {
             console.log('Success!', response);
             form.reset();
-            submissionMessage();
         })
         .catch(error => {
             console.error('Error!', error.message);
