@@ -44,7 +44,7 @@ nav {
 .highlighted-word::after {
     content: '';
     position: absolute;
-    bottom: -10px;
+    bottom: -5px;
     /* tweak as needed */
     left: -5px;
     width: 115%;
@@ -340,6 +340,11 @@ footer {
     #hero-section {
         padding-bottom: 0;
     }
+
+    .highlighted-word::after {
+        bottom: -10px;
+    }
+
 
     /* ----- Work ----- */
     #work-section {
