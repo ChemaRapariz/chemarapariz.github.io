@@ -36,8 +36,6 @@ function toggleFormPage(btn) {
 
     // Modify counter
     document.getElementById('counter').innerText = `${currPage}/${totalPages}`;
-
-    console.log(`Current Page: ${currPage}`);
 }
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbzPJGEBBpCbfBNffkyr5TgA6VS3W27A4fPP8xHBvUnDc_G8NMEr34JisdPgcE97YaK3Wg/exec'
