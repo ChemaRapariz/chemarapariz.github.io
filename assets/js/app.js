@@ -34,6 +34,9 @@ function toggleFormPage(btn) {
     if (nextBtn) nextBtn.classList.toggle('d-none', currPage === totalPages);
     if (backBtn) backBtn.classList.toggle('d-none', currPage === 1);
 
+    // Modify counter
+    document.getElementById('counter').innerText = `${currPage}/${totalPages}`;
+
     console.log(`Current Page: ${currPage}`);
 }
 
