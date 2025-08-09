@@ -3,6 +3,7 @@
     --brand-main: rgb(30, 47, 42);
     --heading-fs: 3.8rem;
 }
+
 /* ---- Nav ---- */
 nav {
     background-color: var(--bg-main);
@@ -43,17 +44,20 @@ nav {
 .highlighted-word::after {
     content: '';
     position: absolute;
-    bottom: -5px;
-    /* Adjust the distance between the word and the line */
-    left: 0;
-    width: 100%;
-    /* Make the line span the width of the word */
-    height: 14px;
-    /* Adjust the thickness of the line */
-    background: url(https://solarity.farm/wp-content/themes/seb-jagoe-theme3/underlines/underline3.svg);
-    border-radius: 2px;
-    /* Optional: Add rounded edges to the line */
+    bottom: -10px;
+    /* tweak as needed */
+    left: -5px;
+    width: 115%;
+    height: 120px;
+    /* Increase this to make the SVG visible */
+    background-image: url('../../assets/img/hero/underline-green.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* or cover depending on look */
+    background-position: bottom center;
+    pointer-events: none;
 }
+
 
 /* ---- Work Section ---- */
 #work-section {
@@ -87,7 +91,7 @@ nav {
     letter-spacing: -0.02em;
 }
 
-#benefits-section p{
+#benefits-section p {
     font-size: 0.8rem;
 }
 
@@ -130,11 +134,11 @@ nav {
     margin-top: 0.5rem;
 }
 
-#speed-section p{
+#speed-section p {
     font-size: 1rem;
 }
 
-#speed-section span{
+#speed-section span {
     font-size: 0.7rem;
 }
 
@@ -170,7 +174,7 @@ nav {
     padding-bottom: 2rem;
 }
 
-.form-check{
+.form-check {
     font-size: 1.1rem;
 }
 
@@ -197,9 +201,10 @@ footer {
 }
 
 /* ---- Submission Page ---- */
-#submissionMessage svg{
+#submissionMessage svg {
     max-width: 120px;
 }
+
 /* ----------- MEDIA QUERIES ----------- */
 
 /* Screens of 576px and more */
@@ -234,10 +239,11 @@ footer {
         left: 0%;
     }
 
-    #work-section h3{
+    #work-section h3 {
         font-size: 2.3rem;
     }
-    #work-section p{
+
+    #work-section p {
         font-size: 1rem;
     }
 
@@ -252,12 +258,12 @@ footer {
     }
 
     /* ---- Speed ----- */
-    #speed-section span{
+    #speed-section span {
         font-size: 1rem;
     }
 
     /* ---- CTA Section ----- */
-    #cta-section p{
+    #cta-section p {
         font-size: 1.15rem;
     }
 
@@ -276,9 +282,10 @@ footer {
     }
 
     /* ----- Work ----- */
-    #work-section h3{
+    #work-section h3 {
         font-size: 2.7rem;
     }
+
     #work-section p {
         font-size: 1.2rem;
     }
@@ -292,8 +299,8 @@ footer {
     #benefits-section h2 {
         font-size: 2.5rem;
     }
-    
-    #benefits-section p{
+
+    #benefits-section p {
         font-size: 1rem;
     }
 
@@ -312,8 +319,8 @@ footer {
         font-size: 3rem;
         margin-top: 0.5rem;
     }
-    
-    #speed-section p{
+
+    #speed-section p {
         font-size: 1.2rem;
     }
 }
@@ -368,7 +375,7 @@ footer {
         padding-top: 5.5rem;
         padding-bottom: 7.5rem;
     }
-    
+
     #faq-section h5 {
         font-size: 5rem;
     }
@@ -411,7 +418,7 @@ footer {
         font-size: var(--heading-fs);
     }
 
-    #benefits-section p{
+    #benefits-section p {
         font-size: 1.25rem;
     }
 
@@ -434,7 +441,7 @@ footer {
         margin-bottom: 5rem;
     }
 
-    #process-section p{
+    #process-section p {
         font-size: 0.8rem;
     }
 
@@ -444,7 +451,7 @@ footer {
         margin-top: 3rem;
     }
 
-    #speed-section p{
+    #speed-section p {
         font-size: 1.5rem;
     }
 
@@ -453,12 +460,12 @@ footer {
         padding-top: 5rem;
         padding-bottom: 3rem;
     }
-    
+
     #cta-section h2 {
         font-size: var(--heading-fs);
     }
 
-    #cta-section p{
+    #cta-section p {
         font-size: 1.35rem;
     }
 
@@ -496,17 +503,17 @@ footer {
     }
 
     /* ----- Process ----- */
-    
+
     #process-section h2 {
         font-size: var(--heading-fs);
         margin-bottom: 7rem;
     }
-    
+
     #process-section svg {
         max-width: 150px;
     }
 
-    #process-section p{
+    #process-section p {
         font-size: 1rem;
     }
 }
