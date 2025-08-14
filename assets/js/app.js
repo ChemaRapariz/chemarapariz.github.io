@@ -4,9 +4,15 @@ function showFAQ(group, button) {
     document.querySelectorAll('.faq-group').forEach(el => el.classList.add('d-none'));
     document.getElementById(`faq-${group}`).classList.toggle('d-none');
 
-    // Styles of active button
-    document.querySelectorAll('.faq-tab-btn').forEach(btn => btn.classList.remove('fw-bold'))
+    // Remove fw-bold and add text-muted to all
+    document.querySelectorAll('.faq-tab-btn').forEach(btn => {
+        btn.classList.remove('fw-bold');
+        btn.classList.add('text-muted');
+    });
+
+    // Add fw-bold and remove text-muted to the clicked one
     button.classList.add('fw-bold');
+    button.classList.remove('text-muted');
 };
 
 let currPage = 1;
